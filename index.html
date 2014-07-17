@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zillabyte</title>
+    <style>
+      html, body {
+        width: 100%
+      }
+      .main_img { 
+        margin: 50px auto 20px auto;
+        display: block;
+      }
+      h1 {
+        color:blue;
+      }
+      hr.fancy-line { 
+          border: 0; 
+          height: 1px;
+          position: relative;
+          margin: 0.5em 0; /* Keep other elements away from pseudo elements*/
+      }
+      hr.fancy-line:before {
+          top: -0.5em;
+          height: 1em;
+      }
+      hr.fancy-line:after {
+          content:'';
+          height: 0.5em;   /* half the height of :before */
+          top: 1px;        /* height of hr*/
+      }
+      
+      hr.fancy-line:before, hr.fancy-line:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+      }
+      
+      hr.fancy-line, hr.fancy-line:before {
+          background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 75%);
+          background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%,rgba(0,0,0,0.1)), color-stop(75%,rgba(0,0,0,0)));
+          background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+          background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+          background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+          background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 75%);
+      }
+      
+      body, hr.fancy-line:after {
+          background: #f4f4f4;
+      }
+      body {
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5em;
+      }
+      
+      .bottom_container {
+        width: 800px;
+        margin: 10px auto;
+      }
+      h2 {
+        font-size: 2em;
+        line-height: 1.6em;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 5px;
+        padding-bottom: 0px;
+      }
+      ul,ol {
+          padding: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-left: 20px
+      }
+      
+      ol ol,ul ol {
+          list-style-type: lower-roman
+      }
+      
+      ul ul ol,ul ol ol,ol ul ol,ol ol ol {
+          list-style-type: lower-alpha
+      }
+      a {
+          color: #4183c4;
+          text-decoration: none
+      }
+      
+      a:hover,a:focus,a:active {
+          text-decoration: underline
+      }
+    </style>
+  </head>
+  <body>
+    <a href='http://zillabyte.com'>
+      <img alt='Powered By Zillabyte' class='main_img' src='powered_by_zillabyte-large.png'>
+    </a>
+    <hr class='fancy-line'>
+    <div class='bottom_container'>
+      <section>
+        <h2>Web Crawling</h2>
+        <ul>
+          <li>
+            <a href='#'>
+              Finding Documents
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
